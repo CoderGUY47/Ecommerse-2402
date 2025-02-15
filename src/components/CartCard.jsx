@@ -4,7 +4,7 @@ import Image from './Image'
 import Flex from './Flex'
 import { FaHeart } from 'react-icons/fa'
 
-const Cart = () => {
+const CartCard = () => {
   return (
     <div className='w-[370px] h-[465px] relative group '>
         <div className='z-10 absolute top-5 left-5 bg-black py-3 px-8 text-white text-base font-dm font-bold'>New</div>
@@ -37,4 +37,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default CartCard 

@@ -11,10 +11,12 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Cart from "./components/Cart";
 import Checkout from "./pages/Checkout";
 import Error from "./pages/Error";
 import RootLayouts from "./layouts/RootLayouts";
+// import CartCard from './components/CartCard';
+import Cart from "./pages/Cart";
+
 
 
 const router = createBrowserRouter(
@@ -30,7 +32,7 @@ const router = createBrowserRouter(
           <Route path="/signup" element={<Signup/>}> </Route>
           <Route path="/cart" element={<Cart/>}> </Route>
           <Route path="/checkout" element={<Checkout/>}> </Route>
-          <Route path="*" element={<Error/>}> </Route>
+          <Route path="/error" element={<Error/>}> </Route>
     </Route>
 
     
