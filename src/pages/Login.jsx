@@ -15,7 +15,6 @@ const Login = () => {
     <section className='pb-[70px]'>
       <Container>
         <CommonHeading className='pt-5' text='Login'/>
-        <p className='text-sm text-[#767676] font-dm font-normal'></p>
         <div className='justify-center items-center mb-4'>
           <Flex className="items-center gap-1 text-sm text-[#767676] font-dm font-normal">
             <Link to="/" className="font-dm font-semibold hover:text-primary duration-500">Home</Link> 

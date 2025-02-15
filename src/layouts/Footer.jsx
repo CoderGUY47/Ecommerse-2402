@@ -4,6 +4,9 @@ import Flex from '../components/Flex'
 import List from '../components/List'
 import Image from '../components/Image'
 import FooterLogo from '../assets/footerLogo.png'
+import { RiFacebookFill } from "react-icons/ri";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 const Footer = () => {
   return (
     <section className='py-14 bg-[#F5F5F3]'>
@@ -18,8 +21,7 @@ const Footer = () => {
                   <List text="Contact"/>
                   <List text="Journal"/>
                 </ul>
-                </div>
-                
+                </div>             
                 <div className='w-[15%]'>
                 <h6 className='text-base text-primary font-dm font-bold pb-4'>SHOP</h6>
                 <ul className='flex flex-col gap-y-[6px]'>
@@ -30,7 +32,6 @@ const Footer = () => {
                   <List text="Category 5"/>
                 </ul>
                 </div>
-                
                 <div className='w-[15%]'>
                 <h6 className='text-base text-primary font-dm font-bold pb-4'>HELP</h6>
                 <ul className='flex flex-col gap-y-[6px]'>
@@ -51,8 +52,19 @@ const Footer = () => {
                <Image src={FooterLogo}/>
                 
                 </div>
+            </Flex>
 
-                
+            <Flex className='pt-20'>
+              <div className='w-[40%]'>
+                <Flex className='text-[21px] text-primary gap-x-3'>
+                  <RiFacebookFill />
+                  <FaLinkedinIn />
+                  <FaInstagram />
+                </Flex>
+              </div>
+              <div className='w-[60%] text-right'>
+                <p className='text-[14px] text-[#6d6d6d] font-normal font-dm '>2025 Orebi Minimal eCommerce web-designed by DEVS</p>
+              </div>
 
             </Flex>
         </Container>
