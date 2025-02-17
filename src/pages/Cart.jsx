@@ -18,9 +18,9 @@ const Cart = () => {
       <Container>
       <CommonHeading className='pt-5' text='Cart'/>
         <div className='justify-center items-center mb-4'>
-          <Flex className="items-center gap-1 text-sm text-[#767676] font-dm font-normal">
-            <Link to="/" className="font-dm font-semibold hover:text-primary duration-500">Cart</Link> 
-            <FaGreaterThan className='text-primary font-semibold text-[8px]'/>
+          <Flex className="items-center gap-x-1 text-base text-[#767676] font-dm font-normal">
+            <Link to="/" className="font-dm font-normal hover:text-primary duration-500">Home</Link> 
+            <FaGreaterThan className='text-[#767676] font-normal text-[8px]'/>
             <span>Cart</span>
           </Flex>
         </div>

@@ -16,13 +16,13 @@ const Login = () => {
       <Container>
         <CommonHeading className='pt-5' text='Login'/>
         <div className='justify-center items-center mb-4'>
-          <Flex className="items-center gap-1 text-sm text-[#767676] font-dm font-normal">
-            <Link to="/" className="font-dm font-semibold hover:text-primary duration-500">Home</Link> 
-            <FaGreaterThan className='text-primary font-semibold text-[8px]'/>
+          <Flex className="items-center gap-x-1 text-base text-[#767676] font-dm font-normal">
+            <Link to="/" className="font-dm font-normal hover:text-primary duration-500">Home</Link> 
+            <FaGreaterThan className='text-[#767676] font-normal text-[8px]'/>
             <span>Login</span>
           </Flex>
         </div>
-        <p className='w-[570px] text-sm text-[#767676] font-normal font-dm py-10'>
+        <p className='w-[570px] text-base text-[#767676] font-normal font-dm py-10'>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the.
         </p>

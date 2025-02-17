@@ -1,9 +1,10 @@
 import React from 'react'
-import Navber from '../layouts/Navber'
+import { Link } from 'react-router-dom';
 import Container from '../components/Container'
 import CommonHeading from '../components/CommonHeading'
 import Flex from '../components/Flex'
-import { MdArrowForwardIos } from "react-icons/md";
+import { FaGreaterThan } from "react-icons/fa6";
+import Button from '../components/Button'
 
 const Checkout = () => {
   return (
@@ -11,18 +12,26 @@ const Checkout = () => {
         <section className='pt-[124px] pl-[157px] pb-[170px]'>
           <Container>
             <CommonHeading text='Checkout' className='font-dm font-[700] text-[49px]'/>
-            <div>
-              <Flex className='items-center gap-x-1'>
-                <span className='text-[12px] font-dm font-[400] text-[#6D6D60] cursor-pointer hover:text-primary'>Home</span>
-                <MdArrowForwardIos className='text-[12px] font-dm font-[400] text-[#6D6D60] cursor-pointer' />
-                <span className='text-[12px] font-dm font-[400] text-[#6D6D60] cursor-pointer hover:text-primary'>Checkout</span>
-
-                
-                 
+            <div className='justify-center items-center mb-4'>
+              <Flex className="items-center gap-x-1 text-base text-[#767676] font-dm font-normal">
+              <Link to="/" className="font-dm font-normal hover:text-primary duration-500">Home</Link> 
+              <FaGreaterThan className='text-[#767676] font-normal text-[8px]'/>
+              <span>Checkout</span>
               </Flex>
-              <p className='font-dm text-[16px] font-[400] text-[#767676] pt-[127px]'>Have a coupon? <span className='hover:text-primary duration-75 cursor-pointer'>Click here to enter your code</span></p>
-
             </div>
+            <p className='w-[570px] text-base text-[#767676] font-normal font-dm pt-28'>
+              Have a coupon?
+              <span className='hover:text-primary duration-75 cursor-pointer px-2'>Click here to enter your code</span>
+            </p>
+
+
+
+
+
+
+
+
+
 
             <div className='pt-[119px]'>
               <CommonHeading text='Billing Details' className='font-[700] text-[39px] font-dm text-primary'/>
@@ -97,9 +106,78 @@ const Checkout = () => {
                  </div>
 
                 
-                
+                 <div className='pt-[129px]'>
+                <CommonHeading className='text-[39px] font-dm font-[700] text-primary' text='Additional Information'/>
+                <div className='pt-6 w-[1054px]'>
+                 <label htmlFor="name" className='font-dm text-4 font-[700] text-primary'>Other Notes (optional)</label>
+                <br />
+                <input type="email" id="name" name="name" placeholder="Notes about your order, e.g. special notes for delivery." className='w-full outline-none border-b-2 py-4 font-dm text-[14px] text-[#767676]' />
+                 </div>
+              </div>
                 </div>
               </form>
+         
+         <div className='pt-[129px] pb-[60px]'>
+          <CommonHeading text='Your Order' className='text-[39px] font-dm font-[700] text-primary pb-[48px]'/>
+
+          <table className="w-[644px] border-collapse border-[1px] border-[#F0F0F0] bg-transparent ">
+        <thead>
+          <tr className="bg-transparent">
+            <th className="border border-[#F0F0F0] pt-[17px] pb-[14px] pl-[20px] pr-[237px] text-4 font-dm font-[700] text-primary">Product</th>
+            <th className="border border-[#F0F0F0] pt-[13px] pb-[11px] pl-[21px] pr-[267px] font-dm text-4 font-[400] text-secondary">Total</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+         
+            <tr className="bg-transparent">
+              <td className="border border-[#F0F0F0] pt-[17px] pb-[14px] pl-[20px] pr-[165px] text-4 font-dm font-[700] text-primary">Product name x 1</td>
+              <td className="border border-[#F0F0F0] pt-[13px] pb-[11px] pl-[21px] pr-[237px] font-dm text-4 font-[400] text-secondary">389.99 $</td>
+              
+            </tr>
+
+            <tr className="bg-transparent">
+              <td className="border border-[#F0F0F0] pt-[17px] pb-[14px] pl-[20px] pr-[165px] text-4 font-dm font-[700] text-primary">Subtotal</td>
+              <td className="border border-[#F0F0F0] pt-[13px] pb-[11px] pl-[21px] pr-[237px] font-dm text-4 font-[400] text-secondary">389.99 $</td>
+              
+            </tr>
+
+            <tr className="bg-transparent">
+              <td className="border border-[#F0F0F0] pt-[17px] pb-[14px] pl-[20px] pr-[165px] text-4 font-dm font-[700] text-primary">Total</td>
+              <td className="border border-[#F0F0F0] pt-[13px] pb-[11px] pl-[21px] pr-[237px] font-dm text-4 font-[400] text-secondary">389.99 $</td>
+              
+            </tr>
+        
+        </tbody>
+      </table>
+         </div>
+
+         <div className='w-[1053px] border-[1px] border-[#F0F0F0]'>
+             <div className='pt-[24px] pl-[34px]'>
+              <Flex className='gap-x-[8px] pb-[24px] items-center'>
+                <input type="radio" />
+                <label htmlFor="" className='text-[16px] font-dm font-[700] text-primary'>Bank</label>
+              </Flex>
+
+              <p className='w-[985px] bg-[#F7F8F9] text-[14px] font-dm font-[400] text-secondary pt-[29px] pb-[17px] pl-[26px] pr-[438px]'>Pay via Bank; you can pay with your credit card if you don’t have a Bank account.</p>
+             </div>
+
+             <div className='pt-[24px] pl-[34px]'>
+              <Flex className='gap-x-[8px] pb-[24px] items-center'>
+                <input type="radio" />
+                <label htmlFor="" className='text-[16px] font-dm font-[700] text-secondary'>Bank 2</label>
+              </Flex>
+
+              <p className='w-[873px] text-[14px] font-dm font-[400] text-secondary leading-[30px] '>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <span className='text-primary cursor-pointer hover:text-secondary duration-100'>privacy policy</span>.</p>
+             </div>
+
+             <div className='pt-[24px] pl-[34px] pb-[30px]'>
+             <Button text='Proceed to Bank' className='w-[200px] text-[14px] font-dm font-[700] pl-0 pr-0'/>
+             </div>
+
+             
+         </div>
+             
             </div>
 
             
