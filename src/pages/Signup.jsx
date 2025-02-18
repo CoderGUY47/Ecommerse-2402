@@ -14,13 +14,7 @@ const Signup = () => {
     <section>
       <Container>
       <CommonHeading className='pt-5' text='Sign up'/>
-      <div className='justify-center items-center mb-4'>
-          <Flex className="items-center gap-x-1 text-base text-[#767676] font-dm font-normal">
-            <Link to="/" className="font-dm font-normal hover:text-primary duration-500">Home</Link> 
-            <FaGreaterThan className='text-[#767676] font-normal text-[8px]'/>
-            <span>Sign up</span>
-          </Flex>
-        </div>
+        <ArrowPages prevPage='Home' nextPage='Signup'/>
         <p className='w-[570px] text-base text-[#767676] font-normal font-dm py-10'>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the.

@@ -11,20 +11,14 @@ import ProductOne from '../assets/product1.png'
 import { BiMinus, BiPlus } from "react-icons/bi";
 import { FaCaretDown } from "react-icons/fa";
 import Button from './../components/Button';
+import ArrowPages from '../components/ArrowPages'
 
 const Cart = () => {
   return (
     <section>
       <Container>
       <CommonHeading className='pt-5' text='Cart'/>
-        <div className='justify-center items-center mb-4'>
-          <Flex className="items-center gap-x-1 text-base text-[#767676] font-dm font-normal">
-            <Link to="/" className="font-dm font-normal hover:text-primary duration-500">Home</Link> 
-            <FaGreaterThan className='text-[#767676] font-normal text-[8px]'/>
-            <span>Cart</span>
-          </Flex>
-        </div>
-
+        <ArrowPages prevPage='Home' nextPage='Cart'/>
         <table className='my-20'>
           <Flex className="w-[1600px] bg-[#F5F5F3] px-5 py-7">
             <div className="w-[25%]">
